@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Lowercase a with rainbow stripes">
+   <!-- Transparent background -->
+   <!-- <rect width="100%" height="100%" fill="#ffffff"/> -->
+
+  <defs>
+    <!-- Clip path defined by the letter 'a' rendered in a Helvetica-like stack -->
+    <clipPath id="clip-a">
+      <!-- Use a bold-ish Helvetica-family text. Rendering depends on available fonts;
+           most systems will substitute Arial if Helvetica isn't present. -->
+       <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+             font-family="Helvetica, Arial, 'Helvetica Neue', sans-serif"
+             font-weight="700"
+             font-size="720"
+             style="line-height:1">
+         a
+       </text>
+    </clipPath>
+  </defs>
+
+   <!-- Rainbow stripes (stacked rects) clipped to the 'a' shape -->
+   <g clip-path="url(#clip-a)">
+     <!-- Custom color order: green, yellow, orange, red, purple, blue -->
+     <!-- Starting much higher to ensure green is at the top of the letter -->
+     <rect x="0"    y="100" width="1024" height="70" fill="#27AE60"/> <!-- green -->
+     <rect x="0"    y="170" width="1024" height="70" fill="#F1C40F"/> <!-- yellow -->
+     <rect x="0"    y="240" width="1024" height="70" fill="#F39C12"/> <!-- orange -->
+     <rect x="0"    y="310" width="1024" height="70" fill="#E74C3C"/> <!-- red -->
+     <rect x="0"    y="380" width="1024" height="70" fill="#9B59B6"/> <!-- purple -->
+     <rect x="0"    y="450" width="1024" height="70" fill="#3498DB"/> <!-- blue -->
+     
+     <!-- Second repeat -->
+     <rect x="0"    y="520" width="1024" height="70" fill="#27AE60"/> <!-- green -->
+     <rect x="0"    y="590" width="1024" height="70" fill="#F1C40F"/> <!-- yellow -->
+     <rect x="0"    y="660" width="1024" height="70" fill="#F39C12"/> <!-- orange -->
+     <rect x="0"    y="730" width="1024" height="70" fill="#E74C3C"/> <!-- red -->
+     <rect x="0"    y="800" width="1024" height="70" fill="#9B59B6"/> <!-- purple -->
+     <rect x="0"    y="870" width="1024" height="70" fill="#3498DB"/> <!-- blue -->
+   </g>
+
+
+</svg>
