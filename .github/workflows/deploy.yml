@@ -1,4 +1,4 @@
-name: deploy website
+name: Deploy website
 
 on:
   push:
@@ -11,14 +11,17 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
+    - name: Authenticate to Google Cloud
+      uses: google-github-actions/auth@v1
+      with:
+        credentials_json: ${{ secrets.GCP_SA_KEY }}
+    
     - name: Setup Google Cloud CLI
       uses: google-github-actions/setup-gcloud@v1
       with:
-        service_account_key: ${{ secrets.GCP_SA_KEY }}
-        project_id: website-473318
-        export_default_credentials: true
+        project_id: website-473318 
     
     - name: Deploy to Cloud Storage
       run: |
-        gsutil -m rsync -r -d . gs://andrew-killion-personal-website
-        gsutil web set -m index.html -e 404.html gs://andrew-killion-personal-website
+        gsutil -m rsync -r -d . gs://andrewkillion.com
+        gsutil web set -m index.html -e 404.html gs://andrewkillion.com
