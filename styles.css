@@ -108,6 +108,7 @@
 
 .homepage-icons-section{
     margin-top: 5vh;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -147,12 +148,18 @@
 
 .homepage-icon p {
     /* margin-top: 1vh; */
-    width: 100%;
+    width: auto;
+    min-width: fit-content;
     height: 30%;
     font-family: Sysfont, Chicago, Geneva, sans-serif;
-    padding: 0;
+    padding: 0.2rem 0.5rem;
     margin: 0;
     background-color: #FFF;
     border: 1px solid #000;
     text-align: center;
+    white-space: nowrap;
+}
+
+p.homepage-icon-github {
+    transform: translateY(15px);
 }
