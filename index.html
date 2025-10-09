@@ -42,20 +42,6 @@
                 </a>
             </div>
         </main>
-<script>
-    function updateTime() {
-        const now = new Date();
-        const timeString = now.toLocaleTimeString('en-US', {
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: true
-        });
-        document.getElementById('timeDisplay').textContent = timeString;
-    }
-    
-    // Update time immediately and then every second
-    updateTime();
-    setInterval(updateTime, 1000);
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
