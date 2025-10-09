@@ -42,7 +42,6 @@
     z-index: 1000;
     border-bottom: 1px solid #000000;
     white-space: nowrap;
-    overflow-x: auto;
 }
 
 .white-bar::before {
