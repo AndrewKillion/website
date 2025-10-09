@@ -87,10 +87,17 @@
     filter: blur(0.5px);
     object-fit: cover;
     object-position: center;
-    transform: translateY(-4px);
+    transform: translateY(-2.5px);
     max-height: var(--nav-height);
     margin-right: 0.2rem;
 }
+/* 
+@media (max-width: 768px) {
+    .nav-item img {
+        width: 1.5rem; 
+        height: 1.5rem;
+    }
+} */
 
 
 .nav-item:hover::before {
