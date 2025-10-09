@@ -181,7 +181,7 @@ img.homepage-icon.github  {
 } 
 
 p.homepage-icon.github  {
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 
 
@@ -197,8 +197,9 @@ p.homepage-icon.github  {
     font-size: var(--nav-font-size);
     font-weight: 800;
     letter-spacing: 0.5px;
-    position: relative;
+    position: absolute;
     filter: blur(0.2px);
     color: #333333;
-    margin-right: 55px;
+    right: 8px;
+
 }
