@@ -174,16 +174,21 @@
 }
 
 
-.homepage-icon .github {
-    margin-top: 10px;
+img.homepage-icon.github  {
+    margin-top: 20px;
     margin-bottom: 9px;
-    transform: scale(.7);
+    transform: scale(.73) translateY(4px);
+} 
+
+p.homepage-icon.github  {
+    margin-bottom: 1px;
 }
+
 
 .homepage-icon .trash {
     margin-top: 10px;
     margin-bottom: 6px;
-    transform: scale(.65) translateX(4px);
+    transform: scale(.5) translateX(4px);
 }
 
 .time-display {
