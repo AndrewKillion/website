@@ -23,5 +23,5 @@ jobs:
     
     - name: Deploy to Cloud Storage
       run: |
-        gsutil -m rsync -r -d -x "\.git/.*|gha-creds-.*\.json" . gs://andrewkillion.com
+        gsutil -m rsync -r -d -x "\.git/.*|gha-creds-.*\.json|.github/.*|README\.md|gcloudignore\.txt" . gs://andrewkillion.com
         gsutil web set -m index.html -e 404.html gs://andrewkillion.com
