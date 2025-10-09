@@ -2,7 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        <title>andrew.killion</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="icon" type="image/svg+xml" href="/rainbow-a.svg">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">        <title>andrew.killion</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
         
@@ -13,23 +15,47 @@
                 <a class="nav-item" href="/blog">Blog</a>
                 <a class="nav-item" href="/projects">Projects</a>
                 <a class="nav-item" href="/resume">Resume</a>
+                <div class="time-display" id="timeDisplay"></div>
+
             </div>
         </header>
-    <main>
-        <div class="homepage-icons-section">
-        <a class="homepage-icon" href="https://x.com/andrewkillion" target="_blank">
-            <img class="homepage-icon" src="assets/icons/twitter.png">
-            <p class="homepage-icon">My Twitter</p>
-        </a>
-        <a class="homepage-icon">
-            <img class="homepage-icon" src="assets/icons/linkedin.png">
-            <p class="homepage-icon">My LinkedIn</p>
-        </a>
-        <a class="homepage-icon">
-            <img class="homepage-icon" src="assets/icons/github.png">
-            <p class="homepage-icon-github">My Github</p>
-        </a>
-        </div>
-    </main>
+        <main>
+            <div class="homepage-social-icons-section">
+                <a class="homepage-icon" href="https://x.com/andrewkillion" target="_blank">
+                    <img class="homepage-icon" src="assets/icons/twitter.png">
+                    <p class="homepage-icon">Twitter</p>
+                </a>
+                <a class="homepage-icon" href="https://github.com/andrewkillion" target="_blank">
+                    <img class="homepage-icon github" src="assets/icons/github.png">
+                    <p class="homepage-icon">Github</p>
+                </a>
+                <a class="homepage-icon" href="https://linkedin.com/in/andrew-killion" target="_blank">
+                    <img class="homepage-icon" src="assets/icons/linked_in.png">
+                    <p class="homepage-icon">LinkedIn</p>
+                </a>
+            </div>
+            
+            <div class="homepage-other-icons-section">
+                <a class="homepage-icon">
+                    <img class="homepage-icon trash" src="assets/icons/trash.png">
+                    <p class="homepage-icon">Trash</p>
+                </a>
+            </div>
+        </main>
+<script>
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString('en-US', {
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
+        });
+        document.getElementById('timeDisplay').textContent = timeString;
+    }
+    
+    // Update time immediately and then every second
+    updateTime();
+    setInterval(updateTime, 1000);
+    </script>
 </body>
 </html>
