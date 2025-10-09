@@ -37,11 +37,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: clamp(1.5rem, 4vh, 2rem);
+    height: var(--nav-height);
     background-color: #000000;
     z-index: 1000;
     border-bottom: 1px solid #000000;
     white-space: nowrap;
+    overflow: hidden
 }
 
 .white-bar::before {
@@ -57,7 +58,8 @@
 }
 
 .nav-item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 0 clamp(0.1rem, 2vw, .4rem);
     vertical-align: middle;
     margin-right: 0.3rem;
@@ -200,5 +202,7 @@ p.homepage-icon.github  {
     filter: blur(0.2px);
     color: #333333;
     right: 2%;
-
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
